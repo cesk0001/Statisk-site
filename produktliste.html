@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produktliste</title>
     <link rel="stylesheet" href="style.css">
+    <script src="productlist.js" defer></script>
 </head>
 
 <body>
@@ -13,15 +14,15 @@
     </header>
     <main>
         <h1> Products </h1>
-        <div class="container_productlist">
-            <div class="productlist-card">
-                <div class="productlist-content">
+        <div class="productlistcontainer">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -29,16 +30,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -46,14 +47,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -62,16 +63,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -80,14 +81,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -95,16 +96,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -112,14 +113,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -128,16 +129,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -146,14 +147,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -161,16 +162,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -178,14 +179,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -194,16 +195,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -212,14 +213,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -227,16 +228,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -244,14 +245,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -260,16 +261,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -278,14 +279,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -293,16 +294,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -310,14 +311,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -326,16 +327,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -344,14 +345,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -359,16 +360,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -376,14 +377,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -392,16 +393,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -410,14 +411,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -425,16 +426,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -442,14 +443,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -458,16 +459,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -476,14 +477,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -491,16 +492,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -508,14 +509,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -524,16 +525,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -542,14 +543,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card">
-                <div class="productlist-content">
+            <div class="productlistcard">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Sahara Team India Fanwear Round Neck Jersey</h3>
-                    <p class="productlist-price">895 DKK</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Sahara Team India Fanwear Round Neck Jersey</h3>
+                    <p class="productlistprice">895 DKK</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -557,16 +558,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1165.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Mean Team India Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">2495</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Mean Team India Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">2495</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                 </div>
                 <div class="productlist-button-wrapper">
                     <a class="productlist-button" href="produkt.html">
@@ -574,14 +575,14 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1530.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Puma</p>
-                    <h3 class="productlist-displayname">Track Jacket</h3>
-                    <p class="productlist-price">4299 DKK</p>
+                    <p class="productlistbrandname">Puma</p>
+                    <h3 class="productlistdisplayname">Track Jacket</h3>
+                    <p class="productlistprice">4299 DKK</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">
@@ -590,16 +591,16 @@
                     </a>
                 </div>
             </div>
-            <div class="productlist-card hasDiscount isSoldOut">
-                <div class="productlist-content">
+            <div class="productlistcard hasDiscount isSoldOut">
+                <div class="productlistcontent">
                     <a href="produkt.html">
-                        <img class="productlist-image" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
+                        <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp" alt="">
                     </a>
-                    <p class="productlist-brandname">Nike</p>
-                    <h3 class="productlist-displayname">Blue T20 Indian Cricket Jersey</h3>
-                    <p class="productlist-price"><span class="productlist-original-price">1595</span> <span
-                            class="productlist-new-price">1372,50</span> DKK</p>
-                    <p class="productlist-discount">-45%</p>
+                    <p class="productlistbrandname">Nike</p>
+                    <h3 class="productlistdisplayname">Blue T20 Indian Cricket Jersey</h3>
+                    <p class="productlistprice"><span class="productlist-original-price">1595</span> <span
+                            class="productlistnewprice">1372,50</span> DKK</p>
+                    <p class="productlistdiscount">-45%</p>
                     <p class="productlist-sold-out">Sold out!</p>
                 </div>
                 <div class="productlist-button-wrapper">

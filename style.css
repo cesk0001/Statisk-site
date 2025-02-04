@@ -71,7 +71,7 @@ h1 {
   gap: 10px;
   justify-items: center;
 }
-.productlist-card {
+.productlistcard {
   background-color: cornflowerblue;
   border-radius: 6px;
   width: 100%;
@@ -83,29 +83,29 @@ h1 {
   align-items: flex-start;
   justify-content: space-between;
 }
-.productlist-card.isSoldOut {
+.productlistcard.isSoldOut {
   background-color: #b2caf7;
 }
-.productlist-card.isSoldOut .productlist-image {
+.productlistcard.isSoldOut .productlistimage {
   opacity: 0.7;
 }
-.productlist-image {
+.productlistimage {
   width: 100%;
   margin-bottom: 8px;
 }
-.productlist-brandname {
+.productlistbrandname {
   margin-bottom: 8px;
 }
-.productlist-displayname {
+.productlistdisplayname {
   margin-bottom: 8px;
 }
-.productlist-price {
+.productlistprice {
   margin-bottom: 8px;
 }
 .productlist-original-price {
   text-decoration: line-through;
 }
-.productlist-discount {
+.productlistdiscount {
   margin-bottom: 8px;
   background-color: #a21e1e;
   color: white;
