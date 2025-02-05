@@ -102,7 +102,7 @@ h1 {
 .productlistprice {
   margin-bottom: 8px;
 }
-.productlist-original-price {
+.productlistoriginalprice {
   text-decoration: line-through;
 }
 .productlistdiscount {
@@ -143,17 +143,17 @@ h1 {
 }
 
 /*PRODUCT*/
-.container-product {
+.productcontainer {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
-.product-image {
+.productimage {
   width: 100%;
 }
 
-.product-content {
+.productcontent {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -161,23 +161,23 @@ h1 {
   align-items: flex-start;
 }
 
-.product-brandname {
+.productbrandname {
   margin-bottom: 8px;
 }
 
-.product-displayname {
+.productdisplayname {
   margin-bottom: 8px;
 }
 
-.product-price {
+.productprice {
   margin-bottom: 8px;
 }
 
-.product-original-price {
+.productoriginalprice {
   text-decoration: line-through;
 }
 
-.product-discount {
+.productdiscount {
   margin-bottom: 8px;
   background-color: #a21e1e;
   color: white;
@@ -186,7 +186,7 @@ h1 {
 }
 
 @media (min-width: 769px) {
-  .container-product {
+  .productcontainer {
     grid-template-columns: 1fr 1fr;
     gap: 10%;
   }

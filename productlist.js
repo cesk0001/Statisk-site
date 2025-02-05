@@ -23,7 +23,7 @@ function showList(products) {
           <p class="productlistbrandname">${product.brandname}</p>
           <h3 class="productlistdisplayname">${product.productdisplayname}</h3>
           <p class="productlistprice">
-          ${product.discount ? `<span class="productlist-original-price">${product.price}</span> <span class="productlistnewprice">${newPrice}</span>` : product.price}
+          ${product.discount ? `<span class="productlistoriginalprice">${product.price}</span> <span class="productlistnewprice">${newPrice}</span>` : product.price}
             DKK
           </p>
           ${product.discount ? `<p class="productlistdiscount">-${product.discount}%</p>` : ""}
