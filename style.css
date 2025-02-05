@@ -65,7 +65,7 @@ h1 {
 }
 
 /*PRODUCTLIST*/
-.container_productlist {
+.productlistcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
@@ -132,12 +132,12 @@ h1 {
 }
 
 @media (min-width: 769px) {
-  .container_productlist {
+  .productlistcontainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (min-width: 1000px) {
-  .container_productlist {
+  .productlistcontainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
