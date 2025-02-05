@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkt</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+
 </head>
 
 <body>
@@ -14,11 +14,37 @@
 
     </header>
     <main>
-        <div class="productContainer">
+        <section class="purchaseBox">
+            <h3>Navn</h3>
+            <p>Brandname</p>
+            <form>
+                <label>Chose a size:</label>
+                <select name="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
 
-        </div>
+                <button>Add to basket</button>
+            </form>
+        </section>
+        <section class="info">
+            <img src="" alt="">
+            <h2>Product Information</h2>
+            <dl>
+                <dt>Model name</dt>
+                <dd>Model details</dd>
+                <dt>Color</dt>
+                <dd>Blue</dd>
+                <dt>Inventory number</dt>
+                <dd>ID</dd>
+            </dl>
+            <h1>Brand</h1>
+            <p>Brand details</p>
+        </section>
     </main>
-
+    <script src="product.js" defer></script>
 </body>
 
 </html>
