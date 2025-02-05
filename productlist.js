@@ -29,8 +29,8 @@ function showList(products) {
           ${product.discount ? `<p class="productlistdiscount">-${product.discount}%</p>` : ""}
           ${product.soldout ? `<p class="productlistsoldout">Sold out!</p>` : ""}
         </div>
-        <div class="productlist-button-wrapper">
-          <a class="productlist-button" href="produkt.html?id=${product.id}">
+        <div class="productlistbuttonwrapper">
+          <a class="productlistbutton" href="produkt.html?id=${product.id}">
               Read more
           </a>
         </div>
