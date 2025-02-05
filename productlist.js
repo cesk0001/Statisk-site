@@ -7,29 +7,34 @@ fetch(`https://kea-alt-del.dk/t7/api/products/`)
 function showList(products) {
   console.log("Products:", products);
   let outputHtml = "";
-  const markup = products
-    .map((product) => {
-      console.log("Product:", product);
-      outputHtml += `
-      <div class="productlistcard">
+  products.map((product) => {
+    console.log("Product:", product);
+    let newPrice;
+    if (product.discount) {
+      const discountPrice = (product.price / 100) * product.discount;
+      newPrice = Math.ceil(product.price - discountPrice);
+    }
+    outputHtml += `
+      <div class="productlistcard ${product.discount ? `hasDiscount` : ""} ${product.soldout ? `isSoldOut` : ""}">
         <div class="productlistcontent">
-          <a href="produkt.html">
+          <a href="produkt.html?id=${product.id}">
             <img class="productlistimage" src="https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp" alt="">
           </a>
           <p class="productlistbrandname">${product.brandname}</p>
           <h3 class="productlistdisplayname">${product.productdisplayname}</h3>
-          <p class="productlistprice">${product.price} DKK</p>
-          <p class="productlistdiscount">-${product.discount}%</p>
-          <p class="productlistsoldout">Sold out!</p>
+          <p class="productlistprice">
+          ${product.discount ? `<span class="productlist-original-price">${product.price}</span> <span class="productlistnewprice">${newPrice}</span>` : product.price}
+            DKK
+          </p>
+          ${product.discount ? `<p class="productlistdiscount">-${product.discount}%</p>` : ""}
+          ${product.soldout ? `<p class="productlistsoldout">Sold out!</p>` : ""}
         </div>
         <div class="productlist-button-wrapper">
-          <a class="productlist-button" href="produkt.html">
+          <a class="productlist-button" href="produkt.html?id=${product.id}">
               Read more
           </a>
         </div>
       </div>`;
-    })
-    .join("");
-  console.log(outputHtml);
+  });
   productContainer.innerHTML = outputHtml;
 }
