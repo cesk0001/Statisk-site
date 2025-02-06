@@ -1,3 +1,4 @@
+const mainContainer = document.querySelector("main");
 const productContainer = document.querySelector(".productlistcontainer");
 
 const queryString = window.location.search;
@@ -47,5 +48,17 @@ function showList(products) {
         </div>
       </div>`;
   });
-  productContainer.innerHTML = outputHtml;
+
+  // If no products are available
+  if (outputHtml === "") {
+    console.log("EMPTY");
+    mainContainer.innerHTML += `
+    <div class="productlistempty">
+      <h2>Ingen produkter :(</h2>
+      <a href="index.html" class="productlistbutton large">Gå til startside</a>
+    </div>
+    `;
+  } else {
+    productContainer.innerHTML = outputHtml;
+  }
 }
