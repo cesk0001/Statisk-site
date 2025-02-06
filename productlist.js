@@ -17,7 +17,7 @@ function showList(products) {
     console.log("Product:", product);
 
     // If "season" param exists; remove all except selected season
-    if (seasonId && product.season.toLowerCase() !== seasonId) {
+    if (seasonId && product.season.toLowerCase() !== seasonId.toLowerCase()) {
       return;
     }
 
