@@ -1,5 +1,10 @@
 const productContainer = document.querySelector(".productlistcontainer");
 
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const seasonId = urlParams.get("season");
+console.log("Season ID:", seasonId);
+
 fetch(`https://kea-alt-del.dk/t7/api/products/`)
   .then((response) => response.json())
   .then((data) => showList(data));
@@ -9,6 +14,12 @@ function showList(products) {
   let outputHtml = "";
   products.map((product) => {
     console.log("Product:", product);
+
+    // If "season" param exists; remove all except selected season
+    if (seasonId && product.season.toLowerCase() !== seasonId) {
+      return;
+    }
+
     let newPrice;
     if (product.discount) {
       const discountPrice = (product.price / 100) * product.discount;
