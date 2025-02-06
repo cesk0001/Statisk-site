@@ -1,4 +1,10 @@
+const mainContainer = document.querySelector("main");
 const productContainer = document.querySelector(".productlistcontainer");
+
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const seasonId = urlParams.get("season");
+console.log("Season ID:", seasonId);
 
 fetch(`https://kea-alt-del.dk/t7/api/products/`)
   .then((response) => response.json())
@@ -9,6 +15,12 @@ function showList(products) {
   let outputHtml = "";
   products.map((product) => {
     console.log("Product:", product);
+
+    // If "season" param exists; remove all except selected season
+    if (seasonId && product.season.toLowerCase() !== seasonId.toLowerCase()) {
+      return;
+    }
+
     let newPrice;
     if (product.discount) {
       const discountPrice = (product.price / 100) * product.discount;
@@ -36,5 +48,17 @@ function showList(products) {
         </div>
       </div>`;
   });
-  productContainer.innerHTML = outputHtml;
+
+  // If no products are available
+  if (outputHtml === "") {
+    console.log("EMPTY");
+    mainContainer.innerHTML += `
+    <div class="productlistempty">
+      <h2>Ingen produkter :(</h2>
+      <a href="index.html" class="productlistbutton large">Gå til startside</a>
+    </div>
+    `;
+  } else {
+    productContainer.innerHTML = outputHtml;
+  }
 }
